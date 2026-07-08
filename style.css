@@ -1,0 +1,169 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+p {
+    font-size: 20px;
+}sh1 {
+    color: darkblue;
+    font-size: 50px;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.hero {
+    padding: 60px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero button {
+    background-color: black;
+    color: brown;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.hero button:hover {
+    background-color: darkslateblue;
+}
+
+.skills {
+    padding: 40px;
+}
+
+.skills h2 {
+    color: darkblue;
+}
+
+.skills p {
+    font-size: 18px;
+}
+
+.projects {
+    padding: 50px;
+}
+
+.project-card {
+    background-color: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.about {
+    padding: 50px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact {
+    padding: 50px;
+}
+
+.contact button {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: blue;
+}
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .skill-card {
+        width: 80%;
+    }
+
+}
