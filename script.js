@@ -147,7 +147,7 @@ function initPageTransitions() {
     });
 }
 
-function setFormFeedback(message, type = 'success') {
+function setFormFeedback(message, type = '') {
     const feedback = contactForm.querySelector('.form-feedback');
     const validTypes = {
         success: 'feedback-success',
