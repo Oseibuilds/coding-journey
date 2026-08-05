@@ -792,10 +792,34 @@ main {
     font-size: 0.9rem;
 }
 
+.button:disabled,
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 14px 30px rgba(78, 199, 255, 0.12);
+}
+
+.button.loading::after,
+button.loading::after {
+    opacity: 0.15;
+}
+
 .form-feedback {
     margin: 0;
     color: var(--text-secondary);
     min-height: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.form-feedback.success {
+    color: #9ef0d6;
+    transform: translateY(0);
+}
+
+.form-feedback.error {
+    color: #ff8fa3;
+    transform: translateY(0);
 }
 
 .footer {
