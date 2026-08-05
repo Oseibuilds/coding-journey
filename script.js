@@ -149,9 +149,18 @@ function initPageTransitions() {
 
 function setFormFeedback(message, type = 'success') {
     const feedback = contactForm.querySelector('.form-feedback');
+    const validTypes = {
+        success: 'feedback-success',
+        error: 'feedback-error',
+    };
+    const className = validTypes[type] || '';
+
     feedback.textContent = message;
-    feedback.classList.remove('success', 'error');
-    feedback.classList.add(type);
+    feedback.classList.remove('feedback-success', 'feedback-error');
+
+    if (className) {
+        feedback.classList.add(className);
+    }
 }
 
 function setButtonState(isLoading) {
