@@ -1,108 +1,319 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Blessing's Tech Journey</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blessing Osei | AI Developer, Web Developer, Software Engineer portfolio with premium dark theme and animations.">
+    <meta name="keywords" content="Blessing Osei, portfolio, AI developer, web developer, software engineer, front-end developer">
+    <title>Blessing Osei | AI & Web Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<section class="contact">
 
-    <h2>Contact Me</h2>
-                      
-    <p>
-        Interested in working together?
-        Send me a message.
-    </p>
-
-    <button>let's connect and work together</button>
-
-</section>
-
-<body>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-</nav>
-<section class="hero">
-
-    <img src="images/profile.jpg" alt="Blessing Osei" class="profile-image">
-
-    <h1>Hello, I'm Blessing Osei</h1>
-
-    <p>I am a student learning Web Development, AI, and technology.</p>
-
-    <button>View My Projects</button>
-
-</section>
-<section class="skills">
-
-    <h2>My Skills</h2>
-
-    <div class="skill-container">
-
-    <div class="skill-card">
-        <h3>HTML</h3>
-        <p>Building website structures</p>
+<body class="loading">
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <div class="loader-ring" aria-hidden="true"></div>
+        <p>Loading portfolio...</p>
     </div>
 
-    <div class="skill-card">
-        <h3>CSS</h3>
-        <p>Designing beautiful websites</p>
-    </div>
+    <div class="custom-cursor" aria-hidden="true"></div>
 
-    <div class="skill-card">
-        <h3>JavaScript</h3>
-        <p>Adding functionality</p>
-    </div>
+    <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#home">Blessing<span class="brand-highlight">.</span></a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <div class="skill-card">
-        <h3>AI Tools</h3>
-        <p>Building smarter solutions</p>
-    </div>
+    <main>
+        <section id="home" class="section hero-section">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">AI Developer • Web Developer • Software Engineer</span>
+                    <h1>Building premium digital experiences with elegant code and bold design.</h1>
+                    <p class="hero-description">I am a student learning web development, artificial intelligence, and technology. My work focuses on polished UI, smooth performance, and modern product-ready presentation.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">View Projects</a>
+                        <a class="button button-outline" href="#contact">Contact Me</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div class="hero-stat">
+                            <span>04+</span>
+                            <p>Projects</p>
+                        </div>
+                        <div class="hero-stat">
+                            <span>100%</span>
+                            <p>Growth Mindset</p>
+                        </div>
+                        <div class="hero-stat">
+                            <span>24/7</span>
+                            <p>Focus</p>
+                        </div>
+                    </div>
+                    <div class="hero-typewriter">
+                        <span>I'm an</span>
+                        <span class="typing-text" aria-live="polite"></span>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-glow"></div>
+                    <img src="images/profile.jpg" alt="Blessing Osei" class="hero-avatar">
+                    <div class="social-strip" aria-label="Social links">
+                        <a href="#contact">Email</a>
+                        <a href="#projects">GitHub</a>
+                        <a href="#journey">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</div>
+        <section id="about" class="section glass-panel about-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">About Me</span>
+                    <h2>Crafting modern experiences with clean code and elegant design.</h2>
+                </div>
+                <div class="section-chip">Premium</div>
+            </div>
+            <p>My name is Blessing Osei. I am a student learning web development, artificial intelligence, and technology. I build useful digital solutions that feel refined, responsive, and ready for clients or recruiters.</p>
+        </section>
 
-</section>
-<section class="about">
+        <section id="skills" class="section glass-panel skills-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">Skills</span>
+                    <h2>Technical strengths and polished execution.</h2>
+                </div>
+                <div class="section-chip">Focused</div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <h3>HTML</h3>
+                        <span>95%</span>
+                    </div>
+                    <p>Semantic and accessible structure for modern websites.</p>
+                    <div class="skill-meter"><div class="skill-meter-fill" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <h3>CSS</h3>
+                        <span>92%</span>
+                    </div>
+                    <p>Glassmorphism, gradients, responsive layouts, and animation.</p>
+                    <div class="skill-meter"><div class="skill-meter-fill" style="width: 92%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <h3>JavaScript</h3>
+                        <span>88%</span>
+                    </div>
+                    <p>Interactive behavior, smooth scrolling, and custom UI components.</p>
+                    <div class="skill-meter"><div class="skill-meter-fill" style="width: 88%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-head">
+                        <h3>AI Tools</h3>
+                        <span>85%</span>
+                    </div>
+                    <p>Exploring intelligent workflows and smart interface enhancements.</p>
+                    <div class="skill-meter"><div class="skill-meter-fill" style="width: 85%"></div></div>
+                </div>
+            </div>
+        </section>
 
-    <h2>About Me</h2>
+        <section id="stats" class="section stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="24">0</h3>
+                    <p>Projects delivered</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="2">0</h3>
+                    <p>Years learning</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="48">0</h3>
+                    <p>Skills mastered</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p>Hours focused</p>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        My name is Blessing Osei. 
-        I am a student learning web development, artificial intelligence, 
-        and technology. My goal is to build useful digital solutions.
-    </p>
+        <section id="projects" class="section glass-panel projects-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">Projects</span>
+                    <h2>Selected work with refined presentation.</h2>
+                </div>
+                <div class="section-chip">Showcase</div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image project-image-1"></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A polished portfolio built to showcase skills, work, and personal brand with a premium UI.</p>
+                        <div class="project-actions">
+                            <a class="button button-sm button-primary" href="#contact">Details</a>
+                            <a class="button button-sm button-outline" href="#contact">Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image project-image-2"></div>
+                    <div class="project-content">
+                        <h3>Future AI App</h3>
+                        <p>A concept for an intelligent assistant experience with modern interface polish.</p>
+                        <div class="project-actions">
+                            <a class="button button-sm button-primary" href="#contact">Details</a>
+                            <a class="button button-sm button-outline" href="#contact">Soon</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image project-image-3"></div>
+                    <div class="project-content">
+                        <h3>Web App Prototype</h3>
+                        <p>Responsive UI crafted for a modern product launch and intuitive user experience.</p>
+                        <div class="project-actions">
+                            <a class="button button-sm button-primary" href="#contact">Details</a>
+                            <a class="button button-sm button-outline" href="#contact">Prototype</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-</section>
+        <section id="journey" class="section glass-panel timeline-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">Journey</span>
+                    <h2>My coding timeline.</h2>
+                </div>
+                <div class="section-chip">Progress</div>
+            </div>
+            <div class="timeline-list">
+                <div class="timeline-item">
+                    <span class="timeline-date">2023</span>
+                    <h3>Started learning web development</h3>
+                    <p>Built foundational HTML, CSS, and responsive layouts to launch the first personal website.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2024</span>
+                    <h3>Explored JavaScript and UI animation</h3>
+                    <p>Created interactive experiences with smooth motion, hover states, and dynamic content.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2025</span>
+                    <h3>Dove into AI and intelligent tools</h3>
+                    <p>Studied AI concepts, integrated tooling, and adapted workflows for smarter development.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2026</span>
+                    <h3>Building premium product-ready designs</h3>
+                    <p>Focusing on polished UI, performance, and portfolio assets for recruiters and clients.</p>
+                </div>
+            </div>
+        </section>
 
-<section class="projects">
+        <section id="testimonials" class="section glass-panel testimonials-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">Testimonials</span>
+                    <h2>What people say about the work.</h2>
+                </div>
+                <div class="section-chip">Trusted</div>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <p>"Blessing delivers thoughtful interfaces with strong attention to detail. The animations and polished layout make the experience feel premium."</p>
+                    <div>
+                        <strong>Emma L.</strong>
+                        <span>Product Lead</span>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Responsive, creative, and easy to collaborate with. The final website looked impressive and was ready for presentation."</p>
+                    <div>
+                        <strong>Lucas M.</strong>
+                        <span>Software Manager</span>
+                    </div>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Blending AI ideas with modern UI design felt natural. The result is sleek, futuristic, and confident."</p>
+                    <div>
+                        <strong>Priya S.</strong>
+                        <span>Design Mentor</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <h2>My Projects</h2>
+        <section id="contact" class="section glass-panel contact-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">Contact</span>
+                    <h2>Let's build something exceptional together.</h2>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Ready to collaborate on your next web or AI project? Send a message and I will get back to you quickly.</p>
+                    <div class="contact-details">
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:hello@blessing.dev">hello@blessing.dev</a>
+                        </div>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Remote / Worldwide</span>
+                        </div>
+                    </div>
+                    <div class="social-panel">
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="field-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required>
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        <span class="field-error"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                        <span class="field-error"></span>
+                    </div>
+                    <button type="submit" class="button button-primary">Send Message</button>
+                    <p class="form-feedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This is the first website I have ever built.</p>
-    </div>
+    <footer class="footer">
+        <p>© 2026 Blessing Osei. Crafted for clients and recruiters with care.</p>
+        <button class="button back-to-top" type="button">Back to Top</button>
+    </footer>
 
-    <div class="project-card">
-        <h3>Future AI App</h3>
-        <p>Coming soon...</p>
-    </div>
-
-</section>
-
-<h1>Welcome to Blessing's AI and Tech Journey</h1>
-
-<p>I am a student learning coding, AI, and technology.</p>
-
-<h2>My Goals</h2>
-
-<p>My goal is to build websites, AI apps, and create solutions.</p>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
