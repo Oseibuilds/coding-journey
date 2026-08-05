@@ -185,7 +185,6 @@ function validateContactForm() {
         }
     });
 
-    const emailInput = contactForm.querySelector('#email');
     const emailError = emailInput.nextElementSibling;
     if (emailInput.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
         emailError.textContent = 'Enter a valid email address.';
